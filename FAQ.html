@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - GreenTech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Importation de Tailwind CSS via le CDN.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+
+    <!-- Présentation de l'entreprise -->
+    <section class="relative py-16 text-center bg-cover bg-center" style="background-image: url('assets/images/pexels-mike-van-schoonderwalt-1884800-5511491.jpg'); background-size: cover; background-position: center;">
+        <div class="text-center mb-8 bg-white bg-opacity-75 p-4">
+            <h2 class="text-6xl font-bold text-[#12B5A3] mb-4">Besoin d'aide ? On vous répond !</h2>
+            <div class="relative max-w-lg mx-auto">
+                <input type="text" class="w-full h-12 pl-4 pr-12 rounded-full shadow-lg focus:outline-none" placeholder="Posez votre question ou entrez des mots-clés ici">
+                <span class="absolute top-0 right-0 mt-3 mr-4 text-gray-500"><i class="fas fa-search"></i></span>
+            </div>
+            <p class="text-gray-500 mt-2">Exemples de recherche : Assurance, Mon programme fidélité, Comment payer mon acompte, Ma formule tout compris, Crédit...</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container mx-auto py-16">
+        <h3 class="text-6xl font-bold text-[#12B5A3] text-center mb-8">Quelques questions régulières (FAQ)</h3>
+        <div class="space-y-4">
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <button class="faq-question w-full text-left font-semibold text-[#12B5A3]" onclick="toggleFAQ(0)">Quels sont vos principaux services ?</button>
+                <p class="faq-answer hidden text-gray-600 mt-2">Nous proposons des solutions en énergies renouvelables, en efficacité énergétique et en développement de logiciels écoresponsables.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <button class="faq-question w-full text-left font-semibold text-[#12B5A3]" onclick="toggleFAQ(1)">Comment puis-je demander un devis ?</button>
+                <p class="faq-answer hidden text-gray-600 mt-2">Vous pouvez nous contacter via notre formulaire en ligne ou nous appeler directement pour obtenir un devis personnalisé.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <button class="faq-question w-full text-left font-semibold text-[#12B5A3]" onclick="toggleFAQ(2)">Travaillez-vous avec des entreprises et des particuliers ?</button>
+                <p class="faq-answer hidden text-gray-600 mt-2">Oui, nous travaillons aussi bien avec des entreprises qu’avec des particuliers souhaitant adopter des solutions écologiques.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <button class="faq-question w-full text-left font-semibold text-[#12B5A3]" onclick="toggleFAQ(3)">Comment vous contacter immédiatement ?</button>
+                <p class="faq-answer hidden text-gray-600 mt-2">Vous pouvez directement nous joindre à travers notre formulaire de contact</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <button class="faq-question w-full text-left font-semibold text-[#12B5A3]" onclick="toggleFAQ(4)">Vous êtes situés dans combien de pays ?</button>
+                <p class="faq-answer hidden text-gray-600 mt-2">Pour le moment nous sommes uniquement situés au Cameroun et en Normandie.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFAQ(index) {
+            const answers = document.querySelectorAll(".faq-answer");
+            answers[index].classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
