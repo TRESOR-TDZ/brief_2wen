@@ -86,18 +86,18 @@ body{
 .bxbx-user{
     margin-right: -10em;
 }
-.hero{
+/* .hero{
     background: url(../images/Property1.png) no-repeat center center/cover; /* Image de fond centrée et couverte */
-    height: 100vh; /* Hauteur de l'écran entier */
-    justify-content: center; /* Centrage horizontal des éléments */
-    align-items: center; /* Centrage vertical des éléments */
-    text-align: center; /* Texte centré */
-    color: white; /* Couleur du texte en blanc */
-    padding-top: 30rem;
-    line-height: 1em;
-    animation: backgroundTransition 15s infinite; /* L'animation dure 15 secondes et se répète infiniment */
-}
-@keyframes backgroundTransition {
+    /* height: 100vh; Hauteur de l'écran entier */
+    /* justify-content: center; /* Centrage horizontal des éléments */
+    /* align-items: center; /* Centrage vertical des éléments */
+    /* text-align: center; Texte centré */ */ */
+    /* color: white; /* Couleur du texte en blanc */
+    /* padding-top: 30rem; */
+    /* line-height: 1em; */
+    /* animation: backgroundTransition 15s infinite; L'animation dure 15 secondes et se répète infiniment */
+/* } */ */
+/* @keyframes backgroundTransition {
     0% {
         background-image: url(../Images/Property1.png);
     }
@@ -116,16 +116,16 @@ body{
     100% {
         background-image: url(../Images/Frame30.png);
     }
-}
-.image{
+} */
+/* .image{
 
     background: url(../Images/Component5.png) no-repeat center center/cover; /* Image de fond centrée et couverte */
-    height: 350px; 
+    /* height: 350px; 
     align-items: center; /* Centrage vertical des éléments */
-    animation: imageTransition 15s infinite; /* L'animation dure 15 secondes et se répète infiniment */
-    background-size: cover;
-}
-@keyframes imageTransition {
+    /* animation: imageTransition 15s infinite; /* L'animation dure 15 secondes et se répète infiniment */
+    /* background-size: cover; */
+/* } */ */
+/* @keyframes imageTransition {
     0% {
         background-image: url(../Images/Component5.png);
     }
@@ -137,10 +137,10 @@ body{
     }
     100% {
         background-image: url(../Images/pannels-project1.png);
-    }
+    } */ */
   
-}
-.services{
+/* } */ */ */
+/* .services{
     right: 60vh;
 }
 .services .boxservice{
@@ -149,8 +149,8 @@ body{
     border-radius: 10px;
     /* display:flex;
     justify-content: space-between; */ 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+/* } */ */
 .footer {
     background-color: #101C1E;
     color: #fff;

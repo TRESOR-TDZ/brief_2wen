@@ -8,8 +8,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" rel="stylesheet"> <!-- Importation du css de Glide.-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script> <!-- Importation du js de Glide.-->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Importation de Tailwind CSS via le CDN.-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    .background-slider {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .background-slider img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: fade 15s infinite;
+    }
+    @keyframes fade {
+      0% { opacity: 1; }
+      33% { opacity: 0; }
+      66% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .background-slider img:nth-child(2) {
+      animation-delay: 5s;
+    }
+    .background-slider img:nth-child(3) {
+      animation-delay: 10s;
+    }
+    .content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+    }
+  </style>
 </head>
-<body>
+</head>
+<body class="bg-gray-200 text-white">
     <header class="header">
         <a href="#home" class="logo"> <img src="Images/logo greentech 1.png" alt="logo du site"> </a> <!-- Logo image link -->
         <nav class="navbar"> <!-- Navigation menu -->
@@ -17,7 +55,7 @@
             <a href="about.html">About</a>
             <a href="Services.html">Services</a>
             <a href="CONTACT.html">Contact</a>
-            <a href="CONTACT.html">FAQ</a>
+            <a href="FAQ.html">FAQ</a>
         </nav>
         <div class="btn-group1"> <!-- Buttons group for header actions -->
             <a href="#">
@@ -31,45 +69,114 @@
             </a>
         </div>
     </header>
-    <section class="hero">
-        <h1 class="text-6xl text-white font-bold">Construisons un avenir durable ensemble</h1>
-        <h3 class="text-3xl text-white font-bold">Votre allié pour un avenir durable. Explorez nos solutions innovantes</h3>
-        <button class="btn">Decouvrez nos solutions</button>
-        <button class="btn">Contactez nous</button>
-      </section>
-  
-      <section class="services">
-        <h3 class="text-4xl text-[#101C1E] font-bold">Nos services</h3>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="boxservice">
-          <img src="Images/panneaux-solaires-sur-maison 1.png" alt="pan">
-          <h3 class="text-2xl text-white font-bold">Panneaux solaires</h3>
-          <p class="text-1xl">
-            A travers un systeme d’autoconsommation,
-            produisé et consommé votre propre
-            electricité.
-            </p>
-        </div>
-        <div  class="boxservice">
-          <img src="Images/OIP (3) 1.png" alt="OIP">
-          <h3 class="text-2xl text-white font-bold">L'energie eolienne</h3>
-          <p class="text-1xl">Nous accompagnons les projets d’énergie éolienne pour maximiser leur performance et leur impact écologique. </p>
-        </div>
-        <div  class="boxservice">
-          <img src="Images/unnamed 2.png" alt="unnamed">
-          <h3 class="text-2xl text-white font-bold">Bio gaz</h3>
-          <p class="text-1xl">Offre une vision claire de la performance des installations.
-            Permet d'identifier les sources de gaspillage d'énergie</p>
-        </div>
+  <h2 class="text-3xl font-bold text-teal-600 mb-8">Découvrez avec nous un monde plus durable</h2>
+  <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+              <li class="glide__slide"><img src="../Images/Component5.png" alt="Image 1" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component6.png" alt="Image 2" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component9.png" alt="Image 3" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component6.png" alt="Image 3" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component9.png" alt="Image 3" class="w-full h-64 object-cover"></li>
+          </ul>
       </div>
-      </section>
-      <section class=solutions>
-        <h3 class="text-3xl text-[#101C1E] font-bold">Decouvrez avec nous un monde plus <br>durable</h3>
-        <div class="image">
-  
-        </div>
-  
-      </section>
+  </div>
+
+<!-- Background Slider -->
+<div class="background-slider">
+  <img src="Images/Property1.png" alt="Background image 1">
+  <img src="Images/Property2.png" alt="Background image 2">
+  <img src="Images/Property3.png" alt="Background image 3">
+  <img src="Images/Property1.png" alt="Background image 3">
+  <img src="Images/property4.png" alt="Background image 3">
+  <img src=".Images/Frame30.png" alt="Background image 3">
+
+  <div class="absolute inset-0 flex flex-col justify-center items-center">
+    <div class="content">
+      <h1 class="text-4xl md:text-6xl font-bold">Construisons un avenir durable ensemble</h1>
+      <p class="mt-4 text-lg md:text-2xl">Votre allié pour un avenir durable. Explorez nos solutions innovantes</p>
+      <div class="mt-6 flex justify-center items-center space-x-4">
+        <a href="#" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white">Découvrez nos solutions</a>
+        <a href="#" class="px-6 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white rounded-lg">Contactez-Nous</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="text-center py-12">
+  <h2 class="text-3xl font-bold text-left text-teal-600 mb-8 pl-8">Nos Services</h2>
+  <div class="flex justify-center space-x-8">
+      <!-- Service 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6 max-w-xs transform hover:scale-105 transition duration-500">
+          <img src="Images/panneaux-solaires-sur-maison 1.png" alt="Installation des panneaux solaires" class="w-42 h-42 justify-center items-center mb-4">
+          <h3 class="text-xl font-semibold mb-2">Installation des panneaux solaires</h3>
+          <p class="text-gray-600">Pour particuliers, entreprises et collectivités. À travers un système d'autoconsommation, produisez et consommez votre propre électricité.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-white shadow-md rounded-lg p-6 max-w-xs transform hover:scale-105 transition duration-500">
+          <img src="Images/OIP (3) 1.png" alt="L'énergie éolienne" class="w-42 h-42 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">L'énergie éolienne</h3>
+          <p class="text-gray-600">Nous accompagnons les projets d'énergie éolienne pour maximiser leur performance et leur impact écologique.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-white shadow-md rounded-lg p-6 max-w-xs transform hover:scale-105 transition duration-500">
+          <img src="Images/unnamed 2.png" alt="Bio Gaz" class="w-42 h-42 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Bio Gaz</h3>
+          <p class="text-gray-600">Offre une vision claire de la performance des installations. Permet d'identifier les sources de gaspillage d'énergie.</p>
+      </div>
+  </div>
+</section>
+
+<!-- Nouvelle section avec Carousel et Button -->
+<section class="text-center py-12 bg-white">
+<h2 class="text-3xl font-bold text-teal-600 mb-8">Découvrez avec nous un monde plus durable</h2>
+<div class="glide">
+    <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+            <li class="glide__slide"><img src="Images/Property1.png" alt="Image 1" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/Property2.png" alt="Image 2" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/Property3.png" alt="Image 3" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/Property1.png" alt="Image 3" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/property4.png" alt="Image 3" class="w-full h-85 object-cover"></li>
+        </ul>
+    </div>
+</div>
+<div class="pl-8">
+  <button class="mt-8 px-6 py-2 border-2 border-teal-600 text-teal-600 font-semibold rounded-lg flex items-center">
+      Voir plus
+      <span class="ml-2">&#x27A4;</span> <!-- Code pour la petite flèche -->
+  </button>
+</div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="py-12 bg-white">
+<div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold text-teal-600 mb-8">Témoignages</h2>
+    <div class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+        <img src="Images/team1.jpg" alt="Profile Picture" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <blockquote class="text-gray-900 italic mb-4">
+            "GTS! I cannot believe. It's awesome."
+        </blockquote>
+        <p class="text-gray-600 mb-4">
+            J'ai décidé de faire ma part pour l'environnement en installant des panneaux solaires sur mon toit. C'était un investissement important, mais cela en vaut la peine. Je suis maintenant indépendant de la compagnie d'électricité et je sais que je fais ma part pour la planète.
+        </p>
+        <p class="font-bold text-gray-900">Trésor LESOURIANT</p>
+        <p class="text-gray-500">HR Officer</p>
+    </div>
+</div>
+</section>
+
+<!-- Glide.js JavaScript -->
+<script>
+new Glide('.glide', {
+    type: 'carousel',
+    autoplay: 3000,
+    hoverpause: true,
+    animationDuration: 1000,
+    perView: 1
+}).mount();
+</script>
 
     <footer class="flex flex-col bg-[#101C1E] pt-6 w-full items-center justify-center px-12 max-md:px-6 border-t">
         <section class="flex flex-col justify-center items-center w-full border-b border-green-800 pt-3 max-md:pb-8">
@@ -152,3 +259,6 @@
 
 </body>
 </html>
+
+
+  
