@@ -5,8 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GreenTech </title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <header class="header">
+        <a href="#home" class="logo"> <img src="Images/logo greentech 1.png" alt="logo du site"> </a> <!-- Logo image link -->
+        <nav class="navbar"> <!-- Navigation menu -->
+            <a href="acceuil.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="CONTACT.html">Contact</a>
+            <a href="CONTACT.html">FAQ</a>
+        </nav>
+        <div class="btn-group1"> <!-- Buttons group for header actions -->
+            <a href="#">
+                <i class='bxbx-search'></i>
+                <img src="Images/Search.png" alt="photo">
+            </a>
+            <a href="sabonner.html" class="btn">je souscris</a>
+            <a href="#">
+              <i class='bxbx-user'></i>
+              <img src="Images/User.png" alt="user">
+            </a>
+        </div>
+    </header>
+    <section class="hero">
+        <h1 class="text-6xl text-white font-bold">Construisons un avenir durable ensemble</h1>
+        <h3 class="text-3xl text-white font-bold">Votre allié pour un avenir durable. Explorez nos solutions innovantes</h3>
+        <button class="btn">Decouvrez nos solutions</button>
+        <button class="btn">Contactez nous</button>
+      </section>
+  
+      <section class="services">
+        <h3 class="text-4xl text-[#101C1E] font-bold">Nos services</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="boxservice">
+          <img src="Images/panneaux-solaires-sur-maison 1.png" alt="pan">
+          <h3 class="text-2xl text-white font-bold">Panneaux solaires</h3>
+          <p class="text-1xl">
+            A travers un systeme d’autoconsommation,
+            produisé et consommé votre propre
+            electricité.
+            </p>
+        </div>
+        <div  class="boxservice">
+          <img src="Images/OIP (3) 1.png" alt="OIP">
+          <h3 class="text-2xl text-white font-bold">L'energie eolienne</h3>
+          <p class="text-1xl">Nous accompagnons les projets d’énergie éolienne pour maximiser leur performance et leur impact écologique. </p>
+        </div>
+        <div  class="boxservice">
+          <img src="Images/unnamed 2.png" alt="unnamed">
+          <h3 class="text-2xl text-white font-bold">Bio gaz</h3>
+          <p class="text-1xl">Offre une vision claire de la performance des installations.
+            Permet d'identifier les sources de gaspillage d'énergie</p>
+        </div>
+      </div>
+      </section>
+      <section class=solutions>
+        <h3 class="text-3xl text-[#101C1E] font-bold">Decouvrez avec nous un monde plus <br>durable</h3>
+        <div class="image">
+  
+        </div>
+  
+      </section>
+
+    <footer class="flex flex-col bg-[#101C1E] pt-6 w-full items-center justify-center px-12 max-md:px-6 border-t">
+        <section class="flex flex-col justify-center items-center w-full border-b border-green-800 pt-3 max-md:pb-8">
+            <h1 class="text-white font-bold">Technologie durable, avenir serein!</h1>
+            <div class="flex flex-row max-md:flex-col justify-center items-center gap-5 w-full mt-16 max-md:mt-5">
+                <input type="email" placeholder="Une newsletter branchée pour rester au courant⚡" 
+                 className='ml-32 max-md:ml-0 max-md:w-9/12 bg-inherit w-1/2 border-[#12B5A3] text-white placeholder:text-white placeholder:italic max-md:placeholder:text-[11px] max-md:h-10'>              
+                   <button class="rounded-full bg-[#12B5A3] text-black hover:text-white px-4 py-2">Je m'abonne</button>
+            </div>
+            <div class="flex flex-row max-md:flex-col max-md:mt-5 w-full justify-between items-center pt-5">
+                <div class="flex flex-col items-center justify-center max-md:mb-5">
+                    <img src="Images/logo greentech 1.png" alt="logo du site" width="150" height="10">
+                  </div>
+                <div class="flex flex-row max-md:flex-col justify-center items-center gap-4">
+                    <div class="flex items-center justify-center gap-3 text-white text-2xl max-md:mb-3">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <button class="bg-inherit text-white px-3 flex items-center gap-2 border border-white p-2 rounded">
+                        <i class="fab fa-apple text-2xl"></i>
+                        <h3>Télécharger sur  <br>l'App Store</h3>
+                    </button>
+                    <button class="bg-inherit text-white px-3 flex items-center gap-2 border border-white p-2 rounded">
+                        <i class="fab fa-google-play text-2xl"></i>
+                        <h3>Disponible sur <br> Google Play</h3>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col w-full items-center justify-center py-3 border-b border-green-800 max-md:pb-8">
+            <div class="flex flex-row max-md:flex-col w-full justify-between max-md:items-center max-md:gap-8 my-4">
+                <div class="flex flex-col gap-3 max-md:justify-center max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Nos services</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Panneaux solaires</h3>
+                        <h3>Éoliennes</h3>
+                        <h3>Gaz vert</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">À Propos</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Qui sommes-nous?</h3>
+                        <h3>Notre histoire</h3>
+                        <h3>Équipe</h3>
+                        <h3>Carrières</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Ressources</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Blog</h3>
+                        <h3>Études de cas</h3>
+                        <h3>Témoignages</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Espace Client</h1>
+                    <h3 class="text-white text-opacity-75">Parrainage</h3>
+                </div>
+            </div>
+            <h1 class="text-white font-bold mt-10">Technologie durable, avenir serein!</h1>
+        </section>
+        <section class="flex flex-row max-md:flex-col w-full max-md:pt-5">
+            <div class="flex flex-row max-md:flex-col w-full items-center justify-center max-md:gap-2 gap-10 py-3 text-white text-opacity-75">
+                <h3>Politiques de confidentialité</h3>
+                <h3>Mentions légales</h3>
+                <h3>Recrutements</h3>
+                <h3>Contact</h3>
+                <h3>Cookies</h3>
+                <h3>Crédits</h3>
+                <h3>FAQ</h3>
+                <h3>CGV</h3>
+                <h3 class="max-md:mt-6">@2025-Green Tech Solution</h3>
+            </div>
+        </section>
+    </footer>
 
 </body>
 </html>
