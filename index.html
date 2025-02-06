@@ -5,82 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GreenTech </title>
     <link rel="stylesheet" href="./css/tailwind.css">
-</head>
-<body>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" rel="stylesheet"> <!-- Importation du css de Glide.-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script> <!-- Importation du js de Glide.-->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Importation de Tailwind CSS via le CDN.-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    .background-slider {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .background-slider img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: fade 15s infinite;
+    }
+    @keyframes fade {
+      0% { opacity: 1; }
+      33% { opacity: 0; }
+      66% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .background-slider img:nth-child(2) {
+      animation-delay: 5s;
+    }
+    .background-slider img:nth-child(3) {
+      animation-delay: 10s;
+    }
+    .content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+    }
+  </style>
 </head>
-<body class="bg-gray-100">
-
-    <!-- Section Services -->
-    <div class="relative w-full h-[500px] flex items-center justify-center">
-        <!-- Image de fond -->
-        <div class="absolute inset-0 bg-cover bg-center brightness-75" 
-            style="background-image: url('https://source.unsplash.com/1600x900/?solar,wind,energy');">
+</head>
+<body class="bg-gray-200 text-white">
+    <header class="header">
+        <a href="#home" class="logo"> <img src="Images/logo greentech 1.png" alt="logo du site"> </a> <!-- Logo image link -->
+        <nav class="navbar"> <!-- Navigation menu -->
+            <a href="acceuil.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="CONTACT.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+        <div class="btn-group1"> <!-- Buttons group for header actions -->
+            <a href="#">
+                <i class='bxbx-search'></i>
+                <img src="Images/Search.png" alt="photo">
+            </a>
+            <a href="sabonner.html" class="btn">je souscris</a>
+            <a href="#">
+              <i class='bxbx-user'></i>
+              <img src="Images/User.png" alt="user">
+            </a>
         </div>
+    </header>
+  <h2 class="text-3xl font-bold text-teal-600 mb-8">Découvrez avec nous un monde plus durable</h2>
+  <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+              <li class="glide__slide"><img src="../Images/Component5.png" alt="Image 1" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component6.png" alt="Image 2" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component9.png" alt="Image 3" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component6.png" alt="Image 3" class="w-full h-64 object-cover"></li>
+              <li class="glide__slide"><img src="../Images/Component9.png" alt="Image 3" class="w-full h-64 object-cover"></li>
+          </ul>
+      </div>
+  </div>
 
-        <!-- Contenu Texte -->
-        <div class="relative text-center text-white px-6">
-            <h2 class="text-4xl font-bold italic">NOS SERVICES</h2>
-            <p class="mt-2 text-lg">“Sont des solutions énergétiques durables pour un avenir meilleur.”</p>
-        </div>
+<!-- Background Slider -->
+<div class="background-slider">
+  <img src="Images/Property1.png" alt="Background image 1">
+  <img src="Images/Property2.png" alt="Background image 2">
+  <img src="Images/Property3.png" alt="Background image 3">
+  <img src="Images/Property1.png" alt="Background image 3">
+  <img src="Images/property4.png" alt="Background image 3">
+  <img src=".Images/Frame30.png" alt="Background image 3">
+
+  <div class="absolute inset-0 flex flex-col justify-center items-center">
+    <div class="content">
+      <h1 class="text-4xl md:text-6xl font-bold">Construisons un avenir durable ensemble</h1>
+      <p class="mt-4 text-lg md:text-2xl">Votre allié pour un avenir durable. Explorez nos solutions innovantes</p>
+      <div class="mt-6 flex justify-center items-center space-x-4">
+        <a href="#" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white">Découvrez nos solutions</a>
+        <a href="#" class="px-6 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white rounded-lg">Contactez-Nous</a>
+      </div>
     </div>
+  </div>
+</div>
 
-    <!-- Cartes des services -->
-    <div class="container mx-auto -mt-16 px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Carte 1 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div class="bg-teal-500 w-16 h-16 mx-auto flex items-center justify-center rounded-full text-white">
-                    🔆 <!-- Icône (remplaçable par une icône SVG) -->
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Panneaux solaires</h3>
-                <p class="text-gray-600 mt-2">Inclut l’installation résidentielle, industrielle et la maintenance</p>
-                <a href="#" class="text-teal-500 font-semibold mt-4 block">plus</a>
-            </div>
+<section class="text-center py-12">
+  <h2 class="text-3xl font-bold text-left text-teal-600 mb-8 pl-8">Nos Services</h2>
+  <div class="flex justify-center space-x-8">
+      <!-- Service 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6 max-w-xs transform hover:scale-105 transition duration-500">
+          <img src="Images/panneaux-solaires-sur-maison 1.png" alt="Installation des panneaux solaires" class="w-42 h-42 justify-center items-center mb-4">
+          <h3 class="text-xl font-semibold mb-2">Installation des panneaux solaires</h3>
+          <p class="text-gray-600">Pour particuliers, entreprises et collectivités. À travers un système d'autoconsommation, produisez et consommez votre propre électricité.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-white shadow-md rounded-lg p-6 max-w-xs transform hover:scale-105 transition duration-500">
+          <img src="Images/OIP (3) 1.png" alt="L'énergie éolienne" class="w-42 h-42 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">L'énergie éolienne</h3>
+          <p class="text-gray-600">Nous accompagnons les projets d'énergie éolienne pour maximiser leur performance et leur impact écologique.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-white shadow-md rounded-lg p-6 max-w-xs transform hover:scale-105 transition duration-500">
+          <img src="Images/unnamed 2.png" alt="Bio Gaz" class="w-42 h-42 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Bio Gaz</h3>
+          <p class="text-gray-600">Offre une vision claire de la performance des installations. Permet d'identifier les sources de gaspillage d'énergie.</p>
+      </div>
+  </div>
+</section>
 
-            <!-- Carte 2 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div class="bg-teal-500 w-16 h-16 mx-auto flex items-center justify-center rounded-full text-white">
-                    🌬️
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Énergie Éolienne</h3>
-                <p class="text-gray-600 mt-2">Inclut l’installation résidentielle, industrielle et la maintenance</p>
-                <a href="#" class="text-teal-500 font-semibold mt-4 block">plus</a>
-            </div>
-
-            <!-- Carte 3 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div class="bg-teal-500 w-16 h-16 mx-auto flex items-center justify-center rounded-full text-white">
-                    🔥
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Bio Gaz</h3>
-                <p class="text-gray-600 mt-2">Inclut l’installation résidentielle, industrielle et la maintenance</p>
-                <a href="#" class="text-teal-500 font-semibold mt-4 block">plus</a>
-            </div>
-
-            <!-- Carte 4 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div class="bg-teal-500 w-16 h-16 mx-auto flex items-center justify-center rounded-full text-white">
-                    ⚙️
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Importance</h3>
-                <p class="text-gray-600 mt-2">Inclut l’installation résidentielle, industrielle et la maintenance</p>
-                <a href="#" class="text-teal-500 font-semibold mt-4 block">plus</a>
-            </div>
-
-        </div>
+<!-- Nouvelle section avec Carousel et Button -->
+<section class="text-center py-12 bg-white">
+<h2 class="text-3xl font-bold text-teal-600 mb-8">Découvrez avec nous un monde plus durable</h2>
+<div class="glide">
+    <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+            <li class="glide__slide"><img src="Images/Property1.png" alt="Image 1" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/Property2.png" alt="Image 2" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/Property3.png" alt="Image 3" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/Property1.png" alt="Image 3" class="w-full h-85 object-cover"></li>
+            <li class="glide__slide"><img src="Images/property4.png" alt="Image 3" class="w-full h-85 object-cover"></li>
+        </ul>
     </div>
+</div>
+<div class="pl-8">
+  <button class="mt-8 px-6 py-2 border-2 border-teal-600 text-teal-600 font-semibold rounded-lg flex items-center">
+      Voir plus
+      <span class="ml-2">&#x27A4;</span> <!-- Code pour la petite flèche -->
+  </button>
+</div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="py-12 bg-white">
+<div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold text-teal-600 mb-8">Témoignages</h2>
+    <div class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+        <img src="Images/team1.jpg" alt="Profile Picture" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <blockquote class="text-gray-900 italic mb-4">
+            "GTS! I cannot believe. It's awesome."
+        </blockquote>
+        <p class="text-gray-600 mb-4">
+            J'ai décidé de faire ma part pour l'environnement en installant des panneaux solaires sur mon toit. C'était un investissement important, mais cela en vaut la peine. Je suis maintenant indépendant de la compagnie d'électricité et je sais que je fais ma part pour la planète.
+        </p>
+        <p class="font-bold text-gray-900">Trésor LESOURIANT</p>
+        <p class="text-gray-500">HR Officer</p>
+    </div>
+</div>
+</section>
+
+<!-- Glide.js JavaScript -->
+<script>
+new Glide('.glide', {
+    type: 'carousel',
+    autoplay: 3000,
+    hoverpause: true,
+    animationDuration: 1000,
+    perView: 1
+}).mount();
+</script>
+
+    <footer class="flex flex-col bg-[#101C1E] pt-6 w-full items-center justify-center px-12 max-md:px-6 border-t">
+        <section class="flex flex-col justify-center items-center w-full border-b border-green-800 pt-3 max-md:pb-8">
+            <h1 class="text-white font-bold">Technologie durable, avenir serein!</h1>
+            <div class="flex flex-row max-md:flex-col justify-center items-center gap-5 w-full mt-16 max-md:mt-5">
+                <input type="email" placeholder="Une newsletter branchée pour rester au courant⚡" 
+                 className='ml-32 max-md:ml-0 max-md:w-9/12 bg-inherit w-1/2 border-[#12B5A3] text-white placeholder:text-white placeholder:italic max-md:placeholder:text-[11px] max-md:h-10'>              
+                   <button class="rounded-full bg-[#12B5A3] text-black hover:text-white px-4 py-2">Je m'abonne</button>
+            </div>
+            <div class="flex flex-row max-md:flex-col max-md:mt-5 w-full justify-between items-center pt-5">
+                <div class="flex flex-col items-center justify-center max-md:mb-5">
+                    <img src="Images/logo greentech 1.png" alt="logo du site" width="150" height="10">
+                  </div>
+                <div class="flex flex-row max-md:flex-col justify-center items-center gap-4">
+                    <div class="flex items-center justify-center gap-3 text-white text-2xl max-md:mb-3">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <button class="bg-inherit text-white px-3 flex items-center gap-2 border border-white p-2 rounded">
+                        <i class="fab fa-apple text-2xl"></i>
+                        <h3>Télécharger sur  <br>l'App Store</h3>
+                    </button>
+                    <button class="bg-inherit text-white px-3 flex items-center gap-2 border border-white p-2 rounded">
+                        <i class="fab fa-google-play text-2xl"></i>
+                        <h3>Disponible sur <br> Google Play</h3>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col w-full items-center justify-center py-3 border-b border-green-800 max-md:pb-8">
+            <div class="flex flex-row max-md:flex-col w-full justify-between max-md:items-center max-md:gap-8 my-4">
+                <div class="flex flex-col gap-3 max-md:justify-center max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Nos services</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Panneaux solaires</h3>
+                        <h3>Éoliennes</h3>
+                        <h3>Gaz vert</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">À Propos</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Qui sommes-nous?</h3>
+                        <h3>Notre histoire</h3>
+                        <h3>Équipe</h3>
+                        <h3>Carrières</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Ressources</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Blog</h3>
+                        <h3>Études de cas</h3>
+                        <h3>Témoignages</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Espace Client</h1>
+                    <h3 class="text-white text-opacity-75">Parrainage</h3>
+                </div>
+            </div>
+            <h1 class="text-white font-bold mt-10">Technologie durable, avenir serein!</h1>
+        </section>
+        <section class="flex flex-row max-md:flex-col w-full max-md:pt-5">
+            <div class="flex flex-row max-md:flex-col w-full items-center justify-center max-md:gap-2 gap-10 py-3 text-white text-opacity-75">
+                <h3>Politiques de confidentialité</h3>
+                <h3>Mentions légales</h3>
+                <h3>Recrutements</h3>
+                <h3>Contact</h3>
+                <h3>Cookies</h3>
+                <h3>Crédits</h3>
+                <h3>FAQ</h3>
+                <h3>CGV</h3>
+                <h3 class="max-md:mt-6">@2025-Green Tech Solution</h3>
+            </div>
+        </section>
+    </footer>
 
 </body>
 </html>
+
+

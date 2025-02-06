@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - GreenTech Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Importation de Tailwind CSS via le CDN.-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body class="bg-gray-200">
+
+    <!-- Présentation de l'entreprise -->
+    <section class="relative py-16 text-center bg-cover bg-center" style="background-image: url('assets/images/background1.jpg'); background-size: cover; background-position: center;">
+        <div class="bg-black bg-opacity-50 py-16 px-8 backdrop-blur-md">
+            <h2 class="text-6xl font-bold text-[#12B5A3] mb-6">Notre Mission et Vision</h2>
+            <p class="text-gray-300 max-w-3xl mx-auto">GreenTech Solutions est dédiée à l’innovation durable en offrant des solutions technologiques 
+                respectueuses de l’environnement. Chez GreenTech Solutions, notre mission est de fournir des technologies durables et innovantes qui 
+                contribuent à la protection de l'environnement tout en répondant aux besoins énergétiques croissants. Nous nous engageons à développer 
+                des solutions qui non seulement améliorent la qualité de vie, mais également préservent les ressources naturelles pour les générations 
+                futures. <br> Notre vision est de devenir un leader mondial dans le domaine des technologies durables. Nous aspirons à un avenir où l'énergie 
+                propre et renouvelable est accessible à tous, où les entreprises et les communautés collaborent pour réduire leur empreinte carbone, et 
+                où les innovations technologiques permettent de créer un monde plus vert et plus équitable.</p>
+        </div>
+    </section>
+
+    <!-- Section "Nos valeurs" -->
+    <section class="container mx-auto py-16 px-4 bg-white shadow-lg rounded-lg mt-12">
+      <h2 class="text-6xl font-bold text-[#12B5A3] text-center mb-8">Nos valeurs</h2>
+      <p class="text-lg text-gray-700 mb-8 text-center">
+          Pour être un fournisseur d’énergie viable tout en favorisant la baisse de consommation de nos clients, GreenTech Solutions a un secret : travailler chaque jour avec une conviction sans faille. Et pour nous, le mieux, c’est de le prouver par des actes concrets.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+          <button class="bg-[#12B5A3] text-white py-2 px-4 rounded-lg font-bold shadow-lg hover:bg-green-600 transition duration-300">Combativité</button>
+          <button class="bg-[#12B5A3] text-white py-2 px-4 rounded-lg font-bold shadow-lg hover:bg-green-600 transition duration-300">Durabilité</button>
+          <button class="bg-[#12B5A3] text-white py-2 px-4 rounded-lg font-bold shadow-lg hover:bg-green-600 transition duration-300">Proximité</button>
+          <button class="bg-[#12B5A3] text-white py-2 px-4 rounded-lg font-bold shadow-lg hover:bg-green-600 transition duration-300">Transparence</button>
+      </div>
+    </section>
+
+    <!-- Compteur de chiffres -->
+    <section class="gallery mt-20 bg-gray-100 py-20 fade-in">
+        <div class="container mx-auto text-center">
+        <h3 class="text-6xl font-bold text-[#12B5A3] mb-6 slide-up">Notre impact en chiffres</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="impact-item p-4 bg-white shadow rounded slide-up hover-up">
+                <h4 class="text-xl font-bold"><span class="count" data-count="500">0</span>+</h4>
+                <p class="text-gray-600">Projets réalisés</p>
+            </div>
+        <div class="impact-item p-4 bg-white shadow rounded slide-up hover-up">
+          <h4 class="text-xl font-bold"><span class="count" data-count="100">0</span>%</h4>
+          <p class="text-gray-600">Clients satisfaits</p>
+        </div>
+        <div class="impact-item p-4 bg-white shadow rounded slide-up hover-up">
+          <h4 class="text-xl font-bold"><span class="count" data-count="10">0</span>+</h4>
+          <p class="text-gray-600">Années d'expérience</p>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Galerie d'images -->
+    <section class="container mx-auto bg-gray-200 py-16">
+        <h3 class="text-6xl font-bold text-[#12B5A3] text-center mb-8">Nos réalisations</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <img src="assets/images/realo1.jpg" class="w-full h-64 rounded-lg shadow-lg transform hover:scale-105 transition duration-500" alt="Projet 1">
+            <img src="assets/images/realo4.jpg" class="w-full h-64 rounded-lg shadow-lg transform hover:scale-105 transition duration-500" alt="Projet 2">
+            <img src="assets/images/realo3.jpg" class="w-full h-64 rounded-lg shadow-lg transform hover:scale-105 transition duration-500" alt="Projet 3">
+        </div>
+    </section>
+
+    <!-- Membre de l'équipe -->
+    <section class="container mx-auto py-16 text-center">
+      <h3 class="text-6xl font-bold text-[#12B5A3] mb-8">Notre Équipe</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white shadow-lg rounded-lg transform transition duration-500 hover:scale-105">
+              <img src="assets/images/ceo1.jpg" class="rounded-full mx-auto mb-4 w-40 h-40" alt="Membre 1">
+              <h4 class="text-xl font-semibold">Wendy LATETUE</h4>
+              <p class="text-gray-600">Chief Executive Officer</p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg transform transition duration-500 hover:scale-105">
+              <img src="assets/images/wildo1.jpg" class="rounded-full mx-auto mb-4 w-40 h-40" alt="Membre 2">
+              <h4 class="text-xl font-semibold">Donald NJIKAM</h4>
+              <p class="text-gray-600">Chief Technical Officer</p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg transform transition duration-500 hover:scale-105">
+              <img src="assets/images/hr2.jpg" class="rounded-full mx-auto mb-4 w-40 h-40" alt="Membre 3">
+              <h4 class="text-xl font-semibold">Trésor LESOURIANT</h4>
+              <p class="text-gray-600">HR Director</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Nos partenaires -->
+    <section class="trust mt-20 bg-gray-50 py-20 fade-in">
+        <div class="container mx-auto text-center">
+            <h3 class="text-6xl font-bold text-[#12B5A3] mb-6 slide-up">Ils nous font confiance</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="p-4 bg-white shadow rounded slide-up hover-up">
+                    <img src="assets/images/enko sans fond.png" alt="Logo 1" class="w-full h-auto">
+                </div>
+                <div class="p-4 bg-white shadow rounded slide-up hover-up">
+                    <img src="assets/images/mairie.gif" alt="Logo 2" class="w-full h-auto">
+                </div>
+                <div class="p-4 bg-white shadow rounded slide-up hover-up">
+                    <img src="assets/images/LOGO SG VERT.png" alt="Logo 3" class="w-full h-auto">
+                </div>
+                <div class="p-4 bg-white shadow rounded slide-up hover-up">
+                    <img src="assets/images/cnjc logo.jpg" alt="Logo 4" class="w-full h-auto">
+                </div>
+                <div class="p-4 bg-white shadow rounded slide-up hover-up">
+                    <img src="assets/images/logo lemaire graphic.png" alt="Logo 5" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <script src="js/about.js" defer></script>
+</body>
+</html>
