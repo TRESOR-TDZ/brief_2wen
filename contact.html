@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Contact</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- Lien vers le CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="header">
+        <a href="#home" class="logo"> <img src="./assets/images/" alt="logo du site"> </a> <!-- Logo image link -->
+        <nav class="navbar"> <!-- Navigation menu -->
+            <a href="acceuil.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="CONTACT.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+        <div class="btn-group1"> <!-- Buttons group for header actions -->
+            <a href="#">
+                <i class='bxbx-search'></i>
+                <img src="./assets/images/Search.png" alt="photo">
+            </a>
+            <a href="sabonner.html" class="btn">je souscris</a>
+            <a href="#">
+              <i class='bxbx-user'></i>
+              <img src="./assets/images/User.png" alt="user">
+            </a>
+        </div>
+    </header>
+
+    <!-- Section de l'image avec le titre "Contacter" -->
+    <section class="bg-cover bg-center h-96 relative principal">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h2 class="text-white text-4xl font-bold">Contacter-nous</h2>
+        </div>
+    </section>
+
+    <!-- Section Nos Coordonnées -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <!-- Cameroun -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-green-600">Cameroun</h3>
+                    <p>greentechsolution@gmail.com</p>
+                    <p>BP 1206 Douala, Akwa, Carrefour Arneau Islape</p>
+                    <p>Tél: +237 695673123</p>
+                </div>
+                <!-- Tchad -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-green-600">Tchad</h3>
+                    <p>greentechsolution@gmail.com</p>
+                    <p>BP 1206 Douala, Akwa, Carrefour Arneau Islape</p>
+                    <p>Tél: +237 695673123</p>
+                </div>
+                <!-- Guinée -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-green-600">Guinée</h3>
+                    <p>greentechsolution@gmail.com</p>
+                    <p>BP 1206 Douala, Akwa, Carrefour Arneau Islape</p>
+                    <p>Tél: +237 695673123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de Réalisation d'un projet -->
+    <section class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Formulaire -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Réalisation d'un projet d'installation de panneau solaire</h3>
+                    <form action="#" method="POST">
+                        <!-- Champ Nom -->
+                        <div class="mb-4">
+                            <label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Entrer votre nom"
+                                class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <!-- Champ Email -->
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Entrer votre e-mail"
+                                class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <!-- Champ Message -->
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" placeholder="Entrer votre message ou sujet"
+                                class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <!-- Bouton Envoyer -->
+                        <button type="submit"
+                            class="w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Image à droite -->
+                <div>
+                    <img src="./assets/images/form.jpg" alt="Image du projet"
+                        class="w-full h-full object-cover rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-semibold text-center mb-6">Carte</h3>
+            <div class="relative w-full h-96">
+                <!-- Vous pouvez intégrer une carte ici (Google Map ou autre service) -->
+                <iframe class="w-full h-full rounded-lg shadow-md" 
+                    src="./assets/images/map.jpg"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="flex flex-col bg-[#101C1E] pt-6 w-full items-center justify-center px-12 max-md:px-6 border-t">
+        <section class="flex flex-col justify-center items-center w-full border-b border-green-800 pt-3 max-md:pb-8">
+            <h1 class="text-white font-bold">Technologie durable, avenir serein!</h1>
+            <div class="flex flex-row max-md:flex-col justify-center items-center gap-5 w-full mt-16 max-md:mt-5">
+                <input type="email" placeholder="Une newsletter branchée pour rester au courant⚡" 
+                 className='ml-32 max-md:ml-0 max-md:w-9/12 bg-inherit w-1/2 border-[#12B5A3] text-white placeholder:text-white placeholder:italic max-md:placeholder:text-[11px] max-md:h-10'>              
+                   <button class="rounded-full bg-[#12B5A3] text-black hover:text-white px-4 py-2">Je m'abonne</button>
+            </div>
+            <div class="flex flex-row max-md:flex-col max-md:mt-5 w-full justify-between items-center pt-5">
+                <div class="flex flex-col items-center justify-center max-md:mb-5">
+                    <img src="Images/logo greentech 1.png" alt="logo du site" width="150" height="10">
+                  </div>
+                <div class="flex flex-row max-md:flex-col justify-center items-center gap-4">
+                    <div class="flex items-center justify-center gap-3 text-white text-2xl max-md:mb-3">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <button class="bg-inherit text-white px-3 flex items-center gap-2 border border-white p-2 rounded">
+                        <i class="fab fa-apple text-2xl"></i>
+                        <h3>Télécharger sur  <br>l'App Store</h3>
+                    </button>
+                    <button class="bg-inherit text-white px-3 flex items-center gap-2 border border-white p-2 rounded">
+                        <i class="fab fa-google-play text-2xl"></i>
+                        <h3>Disponible sur <br> Google Play</h3>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col w-full items-center justify-center py-3 border-b border-green-800 max-md:pb-8">
+            <div class="flex flex-row max-md:flex-col w-full justify-between max-md:items-center max-md:gap-8 my-4">
+                <div class="flex flex-col gap-3 max-md:justify-center max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Nos services</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Panneaux solaires</h3>
+                        <h3>Éoliennes</h3>
+                        <h3>Gaz vert</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">À Propos</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Qui sommes-nous?</h3>
+                        <h3>Notre histoire</h3>
+                        <h3>Équipe</h3>
+                        <h3>Carrières</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Ressources</h1>
+                    <div class="flex flex-col gap-3 text-white text-opacity-75 max-md:items-center">
+                        <h3>Blog</h3>
+                        <h3>Études de cas</h3>
+                        <h3>Témoignages</h3>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 max-md:items-center">
+                    <h1 class="text-white font-bold text-xl max-md:text-3xl">Espace Client</h1>
+                    <h3 class="text-white text-opacity-75">Parrainage</h3>
+                </div>
+            </div>
+            <h1 class="text-white font-bold mt-10">Technologie durable, avenir serein!</h1>
+        </section>
+        <section class="flex flex-row max-md:flex-col w-full max-md:pt-5">
+            <div class="flex flex-row max-md:flex-col w-full items-center justify-center max-md:gap-2 gap-10 py-3 text-white text-opacity-75">
+                <h3>Politiques de confidentialité</h3>
+                <h3>Mentions légales</h3>
+                <h3>Recrutements</h3>
+                <h3>Contact</h3>
+                <h3>Cookies</h3>
+                <h3>Crédits</h3>
+                <h3>FAQ</h3>
+                <h3>CGV</h3>
+                <h3 class="max-md:mt-6">@2025-Green Tech Solution</h3>
+            </div>
+        </section>
+    </footer>
+</body>
+
+
+</html>
